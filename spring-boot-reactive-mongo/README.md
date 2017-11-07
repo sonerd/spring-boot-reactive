@@ -7,7 +7,7 @@ This sample project shows usage of spring-data reactive concepts for MongoDB
 * the DB uri is configured in the `application.properties`
 
 ## Addressed concepts
-* routing RESTful endpoints with webflux as done in `CustomerController`
+* routing RESTful endpoints with webflux as done in `RoutesConfig`
 * using reactive repositories like `CustomerRepository`
 * enabling MongoDB auditing with `@EnableMongoAuditing`
 * using auditing fields like `@CreatedDate` as used in `Customer` class 

@@ -31,10 +31,12 @@ public class DataInitialization implements CommandLineRunner {
 
 		repository.deleteAll().thenMany(
 				Flux.just(donald, mickey)
-				.map( c -> repository.save(c))
-		).subscribe(null,
+				.flatMap(c -> repository.save(c))
+		).subscribe( null,
 				throwable ->  log.error("Could not save customer", throwable ),
 		() -> log.info("Finished data init..."));
+
+		repository.count().subscribe(c -> log.info("Inserted " + c + " customers!"));
 
 
 	}
