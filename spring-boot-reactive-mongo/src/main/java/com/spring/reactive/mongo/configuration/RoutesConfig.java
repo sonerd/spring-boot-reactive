@@ -16,8 +16,10 @@ public class RoutesConfig {
 	@Bean
 	RouterFunction<ServerResponse> routes(CustomerHandler handler) {
 
-		return route(GET("/customer"), handler::getAll)
-				.and(
-						route(GET("/customer/{id}"), handler::getById));
+		return route(GET("/customer"),
+							request -> handler.getAll(request))
+
+				.and(route(GET("/customer/{id}"),
+								request -> handler.getById(request)));
 	}
 }
