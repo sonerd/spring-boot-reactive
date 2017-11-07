@@ -16,3 +16,7 @@ out/
 *.iws
 *.iml
 *.ipr
+.gitignore
+
+**/.DS_Store
+spring-boot-reactive-mongo/src/test/
