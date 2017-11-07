@@ -5,6 +5,8 @@ Before starting with spring-reactive I would recommend you to get an understandi
 of reactive programming by reading [Notes on Reactive Programming](https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape)
 and the [Reactor 3 Reference Guide](https://projectreactor.io/docs/core/release/reference/#intro-reactive). 
 
+Feel free to use this project as a bootstrap for your spring-boot-reactive projects. 
+
 ## Overview
 
 * `spring-boot-ractive-mongo` - sample project showing usage of spring-data reactive concepts for MongoDB
